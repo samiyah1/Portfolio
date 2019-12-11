@@ -102,13 +102,8 @@ figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-    @media screen and (max-width: 768px) {
-      #colorlib-aside .author-img {
-        width: 100%;
-        height: auto;
-      }
-      
-    }
+   
+
   #colorlib-aside .position {
     display: block;
     margin-bottom: 2em;
@@ -254,10 +249,20 @@ figure {
     }
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: bottom center;
         position: relative;
+        margin-left: 0; max-width: 100%;
        }
+       @media screen and (max-width: 767px) {
+        #colorlib-hero .flexslider .slides li {
+          background-position: center center;
+          background-size: 150%;
+          margin-left: 0; 
+          max-width: 100%;
+          height: auto;
+        }
+         }
     
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
@@ -347,7 +352,7 @@ figure {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
               border: 1px solid #000 !important; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
 
@@ -411,16 +416,6 @@ body.offcanvas {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
- }
- @media screen and (min-width: 300px) and (max-width:421){
-  .author-img{
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    background-position: left center;
-    background-attachment: fixed;
-
-  }
  }
 
 .colorlib-heading {
