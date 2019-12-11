@@ -252,7 +252,6 @@ figure {
         background-size: cover;
         background-position: bottom center;
         position: relative;
-        margin-left: 0; max-width: 100%;
        }
        @media screen and (max-width: 767px) {
         #colorlib-hero .flexslider .slides li {
