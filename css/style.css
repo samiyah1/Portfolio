@@ -256,7 +256,8 @@ figure {
        @media screen and (max-width: 767px) {
         #colorlib-hero .flexslider .slides li {
           background-position: center center;
-          background-size: 150%;
+          background-position: 100%;
+          background-size: cover;
           margin-left: 0; 
           max-width: 100%;
           height: auto;
@@ -411,7 +412,7 @@ body.offcanvas {
       padding-bottom: 8em; } }
 
 .author-img {
-  background-size: cover;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
